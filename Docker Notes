@@ -1,25 +1,35 @@
-An Introduction to Docker
+--An Introduction to Docker
 
-we'll lern what Docker is and how to use it to run and deploy your Flask apps. However, I won't teach you everything there is to know about Docker!
+we'll lern what Docker is and how to use it to run and deploy your Flask apps.
+
 Docker is a software framework for building, running, and managing images and containers.
+
 In order to understand Docker, you need to clarify two questions:
 
-What are Docker containers, and how are they different to Virtual Machines?
-What are Docker images?
+**What are Docker containers, and how are they different to Virtual Machines?
+**What are Docker images?
 
 After this, you'll be ready to create your own Docker images and use those images to create and run containers.
 
-What are Docker images and containers?
+**What are Docker images and containers?
 
-I'm sure you have heard of the term "Virtual Machine". A virtual machine is an emulation of an Operating System. For example, if you run a Windows virtual machine on your MacOS computer, it will run a whole copy of Windows so you can run Windows programs.
+I'm sure you have heard of the term "Virtual Machine". 
+A virtual machine is an emulation of an Operating System.
+For example, if you run a Windows virtual machine on your MacOS computer,
+it will run a whole copy of Windows so you can run Windows programs.
 
-When you run a Virtual Machine, you can configure what hardware it has access to (e.g. 50% of the host's RAM, 2 CPU cores, etc).
+When you run a Virtual Machine, you can configure what hardware it has access to 
+(e.g. 50% of the host's RAM, 2 CPU cores, etc).
 
-Docker containers are a bit different because they don't emulate an Operating System. They use the Operating System kernel of your computer, and run as a process within the host.
+Docker containers are a bit different because they don't emulate an Operating System.
+They use the Operating System kernel of your computer, and run as a process within the host.
 
-Containers have their own storage and networking, but because they don't have to emulate the operating system and everything that entails, they are much more lightweight.
+Containers have their own storage and networking,
+but because they don't have to emulate the operating system and everything that entails,
+they are much more lightweight.
 
-Looks similar, but the docker -> container section is much more efficient than running a VM because it uses the host's kernel instead of running its own.
+Looks similar, but the docker -> container section is much more efficient than running a VM because
+it uses the host's kernel instead of running its own.
 
 
 
@@ -231,11 +241,3 @@ docker run -dp 5001:5000 rest-apis-flask-python
 Try making requests using the URL 127.0.0.1:5000 with Insomnia REST Client or Postman, and you should see it working well!
 
 Insomnia REST Client successfully made a request to the API running in Docker
-
-
-
-
-
-
-
-
